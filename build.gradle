@@ -6,7 +6,7 @@ targetCompatibility = 1.8
 mainClassName = 'com.dewaldv.grizard.GrizardApplication'
 
 project.ext {
-    dropwizardVersion = '0.7.0'
+    dropwizardVersion = '0.7.1'
     dropWizardConfig = './src/main/resources/grizard.yaml'
 }
 
