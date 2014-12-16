@@ -11,13 +11,13 @@ apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'groovy'
 apply plugin: 'application'
 
-sourceCompatibility = ${srcCompat}
-targetCompatibility = ${tgtCompat}
-mainClassName = ${mainClass}
+sourceCompatibility = "${srcCompat}"
+targetCompatibility = "${tgtCompat}"
+mainClassName = "${mainClass}"
 
 project.ext {
-    dropwizardVersion = ${dwVer}
-    dropWizardConfig = ${dwConfig}
+    dropwizardVersion = "${dwVer}"
+    dropWizardConfig = "${dwConfig}"
 }
 
 run {
