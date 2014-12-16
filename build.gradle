@@ -3,7 +3,7 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath "com.github.jengelman.gradle.plugins:shadow:1.2.0"
+    classpath "com.github.jengelman.gradle.plugins:shadow:${shadowVer}"
   }
 }
 
@@ -11,13 +11,13 @@ apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'groovy'
 apply plugin: 'application'
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
-mainClassName = 'com.dewaldv.grizard.GrizardApplication'
+sourceCompatibility = ${srcCompat}
+targetCompatibility = ${tgtCompat}
+mainClassName = ${mainClass}
 
 project.ext {
-    dropwizardVersion = '0.7.1'
-    dropWizardConfig = './src/main/resources/grizard.yaml'
+    dropwizardVersion = ${dwVer}
+    dropWizardConfig = ${dwConfig}
 }
 
 run {
