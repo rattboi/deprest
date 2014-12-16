@@ -1,4 +1,4 @@
-package com.dewaldv.grizard.models
+package com.rattboi.deprest.models
 
 
 class DefaultResponse {

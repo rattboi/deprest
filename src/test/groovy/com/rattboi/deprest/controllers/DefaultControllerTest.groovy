@@ -1,4 +1,4 @@
-package com.dewaldv.grizard.controllers
+package com.rattboi.deprest.controllers
 
 import org.junit.Test
 

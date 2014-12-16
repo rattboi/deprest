@@ -1,6 +1,6 @@
-package com.dewaldv.grizard.controllers
+package com.rattboi.deprest.controllers
 
-import com.dewaldv.grizard.models.DefaultResponse
+import com.rattboi.deprest.models.DefaultResponse
 
 import javax.ws.rs.GET
 import javax.ws.rs.Path

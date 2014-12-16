@@ -1,6 +1,6 @@
-package com.dewaldv.grizard
+package com.rattboi.deprest
 
-import com.dewaldv.grizard.controllers.DefaultController
+import com.rattboi.deprest.controllers.DefaultController
 import io.dropwizard.jersey.setup.JerseyEnvironment
 import io.dropwizard.setup.Environment
 import org.junit.Before
@@ -8,9 +8,9 @@ import org.junit.Test
 
 import static org.mockito.Mockito.*
 
-class GrizardApplicationTest {
+class DeprestApplicationTest {
 
-    def application = new GrizardApplication()
+    def application = new DeprestApplication()
     def envMock = mock(Environment.class)
     def jerseyMock = mock(JerseyEnvironment.class)
 
@@ -21,7 +21,7 @@ class GrizardApplicationTest {
 
     @Test
     void shouldRegisterDefaultController() {
-        def conf = new GrizardConfiguration()
+        def conf = new DeprestConfiguration()
         application.run(conf, envMock)
         verify(jerseyMock, atLeastOnce()).register(DefaultController.class)
     }
