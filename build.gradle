@@ -1,8 +1,11 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "1.2.0"
+}
 apply plugin: 'groovy'
 apply plugin: 'application'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
 mainClassName = 'com.dewaldv.grizard.GrizardApplication'
 
 project.ext {
